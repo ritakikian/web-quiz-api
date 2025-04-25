@@ -1,0 +1,5 @@
+This is the backend API for a Quiz Web App built using PHP and MySQL. It allows users to register, log in, create quizzes, add multiple-choice questions, and fetch quiz data dynamically. The API is organized across three main PHP files: user.php for handling registration and login, quiz.php for creating, editing, retrieving, and deleting quizzes, and question.php for managing questions and their options. All data is stored in a MySQL database, and the connection is handled in db.php.
+
+The database includes tables for users, quizzes, questions, options, and scores, all linked through proper foreign key relationships. All endpoints accept POST requests using x-www-form-urlencoded format. Responses are returned in JSON for easy integration with any frontend.
+
+This backend was tested using Postman and built to support integration with a separately developed HTML/CSS/JS frontend. The project also includes the original SQL schema file and an image of the database design for reference. To run the backend locally, you simply need to start a PHP development server and connect it to your MySQL instance using the credentials in db.php.
